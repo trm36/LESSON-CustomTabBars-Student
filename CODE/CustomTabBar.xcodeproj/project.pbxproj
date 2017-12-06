@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		0103AD4D1F61E2FA00B3B5F7 /* CustomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0103AD4C1F61E2FA00B3B5F7 /* CustomTabBarController.swift */; };
+		010FA67F1FD8A33E003B54C5 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 010FA67E1FD8A33E003B54C5 /* HomeViewController.swift */; };
+		010FA6811FD8A3B2003B54C5 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 010FA6801FD8A3B2003B54C5 /* ProfileViewController.swift */; };
+		010FA6831FD8A3C7003B54C5 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 010FA6821FD8A3C7003B54C5 /* SettingsViewController.swift */; };
 		019C8DD11F6077A2004C3504 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 019C8DD01F6077A2004C3504 /* AppDelegate.swift */; };
 		019C8DD61F6077A3004C3504 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 019C8DD41F6077A3004C3504 /* Main.storyboard */; };
 		019C8DD81F6077A3004C3504 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 019C8DD71F6077A3004C3504 /* Assets.xcassets */; };
@@ -17,6 +20,9 @@
 
 /* Begin PBXFileReference section */
 		0103AD4C1F61E2FA00B3B5F7 /* CustomTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarController.swift; sourceTree = "<group>"; };
+		010FA67E1FD8A33E003B54C5 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		010FA6801FD8A3B2003B54C5 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		010FA6821FD8A3C7003B54C5 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		019C8DCD1F6077A2004C3504 /* CustomTabBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomTabBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		019C8DD01F6077A2004C3504 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		019C8DD51F6077A3004C3504 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -59,6 +65,9 @@
 				019C8DD01F6077A2004C3504 /* AppDelegate.swift */,
 				019C8DE21F6077CA004C3504 /* CustomTabBarView.swift */,
 				0103AD4C1F61E2FA00B3B5F7 /* CustomTabBarController.swift */,
+				010FA67E1FD8A33E003B54C5 /* HomeViewController.swift */,
+				010FA6801FD8A3B2003B54C5 /* ProfileViewController.swift */,
+				010FA6821FD8A3C7003B54C5 /* SettingsViewController.swift */,
 				019C8DD41F6077A3004C3504 /* Main.storyboard */,
 				019C8DD71F6077A3004C3504 /* Assets.xcassets */,
 				019C8DD91F6077A3004C3504 /* LaunchScreen.storyboard */,
@@ -141,7 +150,10 @@
 			files = (
 				019C8DE31F6077CA004C3504 /* CustomTabBarView.swift in Sources */,
 				019C8DD11F6077A2004C3504 /* AppDelegate.swift in Sources */,
+				010FA6811FD8A3B2003B54C5 /* ProfileViewController.swift in Sources */,
 				0103AD4D1F61E2FA00B3B5F7 /* CustomTabBarController.swift in Sources */,
+				010FA67F1FD8A33E003B54C5 /* HomeViewController.swift in Sources */,
+				010FA6831FD8A3C7003B54C5 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,12 +293,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = CustomTabBar/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.MottApplications.CustomTabBar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -297,12 +309,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = CustomTabBar/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.MottApplications.CustomTabBar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

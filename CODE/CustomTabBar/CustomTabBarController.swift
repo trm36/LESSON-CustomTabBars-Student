@@ -21,11 +21,17 @@ class CustomTabBarController: UITabBarController, CustomTabBarViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let frame = CGRect(x: 0, y: view.frame.height - 75.0, width: view.frame.width, height: 75)
-        tabView.frame = frame
-        selectedIndex = 0
+        tabView.translatesAutoresizingMaskIntoConstraints = false
         tabView.delegate = self
+        selectedIndex = 0
         view.addSubview(tabView)
+        
+        let leadingConstraint = tabView.leadingAnchor.constraint(equalTo: view.leadingAnchor)
+        let trailingConstraint = tabView.trailingAnchor.constraint(equalTo: view.trailingAnchor)
+        let bottomConstraint = tabView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: 34.0) //to extend behind the iPhone X home indicator
+        let heightConstraint = tabView.heightAnchor.constraint(equalToConstant: 104.0) //includes 34.0 points for iPhone X home indicator
+        
+        NSLayoutConstraint.activate([leadingConstraint, trailingConstraint, bottomConstraint, heightConstraint])
     }
     
     // MARK: - Custom Tab Bar Delegate
